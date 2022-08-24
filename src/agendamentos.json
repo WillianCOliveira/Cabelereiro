@@ -1,0 +1,136 @@
+{
+  "Saloes": [
+    {
+      "nome": "Maria Cortes",
+      "cnpj": "12345678901",
+      "id": "1",
+      "datas": [
+        {
+          "servico": "Corte de cabelo",
+          "date": "2022-08-20",
+          "time": "8:00"
+        },
+        {
+          "servico": "Manicure",
+          "date": "2022-08-19",
+          "time": "10:00"
+        },
+        {
+          "servico": "Pedicure",
+          "date": "2022-08-20",
+          "time": "11:00"
+        }
+      ]
+    },
+    {
+      "nome": "Gui Cortes",
+      "cnpj": "12345678901",
+      "id": "5",
+      "datas": [
+        {
+          "servico": "Corte de cabelo",
+          "date": "2022-08-20",
+          "time": "8:00"
+        },
+        {
+          "servico": "Manicure",
+          "date": "2022-08-19",
+          "time": "10:00"
+        },
+        {
+          "servico": "Pedicure",
+          "date": "2022-08-20",
+          "time": "11:00"
+        }
+      ]
+    },
+    {
+      "nome": "Quer vim? Cortes",
+      "cnpj": "12345678901",
+      "id": "6",
+      "datas": [
+        {
+          "servico": "Corte de cabelo",
+          "date": "2022-08-20",
+          "time": "8:00"
+        },
+        {
+          "servico": "Manicure",
+          "date": "2022-08-19",
+          "time": "10:00"
+        },
+        {
+          "servico": "Pedicure",
+          "date": "2022-08-20",
+          "time": "11:00"
+        }
+      ]
+    },
+    {
+      "nome": "Joao Cortes",
+      "cnpj": "12345678901",
+      "id": "2",
+      "datas": [
+        {
+          "servico": "Corte de cabelo",
+          "date": "2022-08-20",
+          "time": "13:00"
+        },
+        {
+          "servico": "Manicure",
+          "date": "2022-08-19",
+          "time": "15:00"
+        },
+        {
+          "servico": "Pedicure",
+          "date": "2022-08-20",
+          "time": "17:00"
+        }
+      ]
+    },
+    {
+      "nome": "Miguel Cortes",
+      "cnpj": "12345678901",
+      "id": "3",
+      "datas": [
+        {
+          "servico": "Corte de cabelo",
+          "date": "2022-08-20",
+          "time": "8:00"
+        },
+        {
+          "servico": "Manicure",
+          "date": "2022-08-19",
+          "time": "9:00"
+        },
+        {
+          "servico": "Pedicure",
+          "date": "2022-08-20",
+          "time": "16:00"
+        }
+      ]
+    },
+    {
+      "nome": "CareCortes",
+      "cnpj": "12345678901",
+      "id": "4",
+      "datas": [
+        {
+          "servico": "Corte de cabelo",
+          "date": "2022-08-20",
+          "time": "9:00"
+        },
+        {
+          "servico": "Manicure",
+          "date": "2022-08-19",
+          "time": "14:00"
+        },
+        {
+          "servico": "Pedicure",
+          "date": "2022-08-20",
+          "time": "15:00"
+        }
+      ]
+    }
+  ]
+}
