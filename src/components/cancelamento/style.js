@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+//Estlização do botão de cancelamento
 export const Container = styled.div`
   margin: 2rem auto;
   text-align: center;

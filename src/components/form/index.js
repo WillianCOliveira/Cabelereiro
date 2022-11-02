@@ -8,7 +8,7 @@ import {
   CustomizeTextField,
   Button,
 } from "./style";
-
+//Formulario de Cadastro
 const Form = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);

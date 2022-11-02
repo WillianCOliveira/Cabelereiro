@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card } from "./style";
 
+// Função que cria os cards dos salões disponíveis na plataforma
 const Salaocard = ({ salao }) => {
   return (
     <Card>

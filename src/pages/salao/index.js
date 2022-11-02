@@ -13,14 +13,14 @@ import {
   CustomizeTextField,
   FormContainer,
 } from "../../components/form/style";
-
+import { useAuth } from "../../providers/auth";
+// Tela principal de informações do Salão, para agendamento, cancelamento e edição.
 const Salao = () => {
   const [salao, setSalao] = useState();
+  const [availableDates, setAvailableDates] = useState();
   const { salaoId } = useParams();
-  const [localAgendamentos, setLocalAgendamentos] = useState(
-    localStorage.getItem("Agendamentos")
-  );
-
+  const { usuario, localAgendamentos, setLocalAgendamentos } = useAuth();
+  console.log(localAgendamentos);
   useEffect(() => {
     if (!localAgendamentos) {
       const thisSalao = Agendamentos.Saloes.find((element) => {
@@ -83,32 +83,19 @@ const Salao = () => {
   const agendar = (evt) => {
     evt.preventDefault();
     const agendamento = { servico: servicos, date, time };
-    const agendamentosJson = JSON.parse(localAgendamentos);
+    const agendamentosJson = localAgendamentos;
     console.log(agendamentosJson);
     const index = agendamentosJson.Saloes.findIndex(
       (element) => element.id === salaoId
     );
     agendamentosJson.Saloes[index].datas.push(agendamento);
     localStorage.setItem("Agendamentos", JSON.stringify(agendamentosJson));
-    setLocalAgendamentos(JSON.stringify(agendamentosJson));
+    setLocalAgendamentos(agendamentosJson);
     setTime("");
     setDate("");
     setServicos("");
   };
-
-  const cancelar = (data, time) => {
-    const agendamentosJson = JSON.parse(localAgendamentos);
-    const index = agendamentosJson.Saloes.findIndex(
-      (element) => element.id === salaoId
-    );
-    const indexData = agendamentosJson.Saloes[index].datas.findIndex(
-      (element) => element.date === data && element.time === time
-    );
-    agendamentosJson.Saloes[index].datas.splice(indexData, 1);
-    localStorage.setItem("Agendamentos", JSON.stringify(agendamentosJson));
-    setLocalAgendamentos(JSON.stringify(agendamentosJson));
-  };
-
+  //
   const filterAvailableDates = (thisSalao) => {
     if (!date) {
       return;
@@ -133,8 +120,7 @@ const Salao = () => {
   };
   useEffect(() => {
     if (localAgendamentos) {
-      const agendamentosJson = JSON.parse(localAgendamentos);
-      const thisSalao = agendamentosJson.Saloes.find((element) => {
+      const thisSalao = localAgendamentos.Saloes.find((element) => {
         return element.id === salaoId;
       });
       setSalao(thisSalao);
@@ -142,8 +128,8 @@ const Salao = () => {
     } else {
       filterAvailableDates(salao);
     }
-  }, [date, time, servicos, localAgendamentos]);
-
+  }, [date, time, servicos, localAgendamentos, filterAvailableDates, salao]);
+  console.log(salao);
   return (
     <div>
       {salao && (
@@ -195,10 +181,32 @@ const Salao = () => {
               </CustomizeSelect>
             </>
           )}
+          <CustomizeTextField
+            variant="standard"
+            type="email"
+            placeholder="Email"
+          />
           <Button type="submit">Enviar</Button>
         </FormContainer>
       )}
-      <Cancelamento salao={salao} cancelar={cancelar} />
+      {salao?.datas.map((data, index) => {
+        if (data.cliente === usuario?.email) {
+          return (
+            <div>
+              {data.date}
+              {data.servico}
+              {data.time}
+              {data.cliente}
+              <Cancelamento
+                key={index}
+                data={data}
+                localAgendamentos={localAgendamentos}
+                setLocalAgendamentos={setLocalAgendamentos}
+              />
+            </div>
+          );
+        }
+      })}
     </div>
   );
 };

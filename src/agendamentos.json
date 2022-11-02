@@ -8,39 +8,51 @@
         {
           "servico": "Corte de cabelo",
           "date": "2022-08-20",
-          "time": "8:00"
+          "time": "8:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "1"
         },
         {
           "servico": "Manicure",
           "date": "2022-08-19",
-          "time": "10:00"
+          "time": "10:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "1"
         },
         {
           "servico": "Pedicure",
           "date": "2022-08-20",
-          "time": "11:00"
+          "time": "11:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "1"
         }
       ]
     },
     {
-      "nome": "Gui Cortes",
+      "nome": "Lucas Cortes",
       "cnpj": "12345678901",
       "id": "5",
       "datas": [
         {
           "servico": "Corte de cabelo",
           "date": "2022-08-20",
-          "time": "8:00"
+          "time": "8:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "5"
         },
         {
           "servico": "Manicure",
           "date": "2022-08-19",
-          "time": "10:00"
+          "time": "10:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "5"
         },
         {
           "servico": "Pedicure",
           "date": "2022-08-20",
-          "time": "11:00"
+          "time": "11:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "5"
         }
       ]
     },
@@ -52,17 +64,23 @@
         {
           "servico": "Corte de cabelo",
           "date": "2022-08-20",
-          "time": "8:00"
+          "time": "8:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "6"
         },
         {
           "servico": "Manicure",
           "date": "2022-08-19",
-          "time": "10:00"
+          "time": "10:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "6"
         },
         {
           "servico": "Pedicure",
           "date": "2022-08-20",
-          "time": "11:00"
+          "time": "11:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "6"
         }
       ]
     },
@@ -74,17 +92,23 @@
         {
           "servico": "Corte de cabelo",
           "date": "2022-08-20",
-          "time": "13:00"
+          "time": "13:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "2"
         },
         {
           "servico": "Manicure",
           "date": "2022-08-19",
-          "time": "15:00"
+          "time": "15:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "2"
         },
         {
           "servico": "Pedicure",
           "date": "2022-08-20",
-          "time": "17:00"
+          "time": "17:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "2"
         }
       ]
     },
@@ -96,17 +120,23 @@
         {
           "servico": "Corte de cabelo",
           "date": "2022-08-20",
-          "time": "8:00"
+          "time": "8:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "3"
         },
         {
           "servico": "Manicure",
           "date": "2022-08-19",
-          "time": "9:00"
+          "time": "9:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "3"
         },
         {
           "servico": "Pedicure",
           "date": "2022-08-20",
-          "time": "16:00"
+          "time": "16:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "3"
         }
       ]
     },
@@ -118,17 +148,23 @@
         {
           "servico": "Corte de cabelo",
           "date": "2022-08-20",
-          "time": "9:00"
+          "time": "9:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "4"
         },
         {
           "servico": "Manicure",
           "date": "2022-08-19",
-          "time": "14:00"
+          "time": "14:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "4"
         },
         {
           "servico": "Pedicure",
           "date": "2022-08-20",
-          "time": "15:00"
+          "time": "15:00",
+          "cliente": "will@gmail.com",
+          "salaoID": "4"
         }
       ]
     }

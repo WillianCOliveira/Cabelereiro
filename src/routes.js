@@ -6,6 +6,7 @@ import Cadastro from "./pages/cadastro";
 import Nav from "./components/header";
 import Salao from "./pages/salao";
 import Sobrenos from "./pages/sobnos";
+import Usuario from "./pages/usuario";
 
 const MyRoutes = () => {
   return (
@@ -16,6 +17,7 @@ const MyRoutes = () => {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/cadastro" element={<Cadastro />}></Route>
           <Route path={`salao/:salaoId`} element={<Salao />}></Route>
+          <Route path="/usuario" element={<Usuario />}></Route>
           <Route path="/sobrenos" element={<Sobrenos />}></Route>
           <Route path="/" element={<Home />}></Route>
         </Routes>

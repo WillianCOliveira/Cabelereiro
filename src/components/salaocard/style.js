@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+//Estilização dos Cards dos salões disponíveis na plataforma
 export const Card = styled.div`
   display: flex;
   flex-direction: column;

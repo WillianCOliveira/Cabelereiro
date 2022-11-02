@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+// Estilização das telas onde estão os salões
 export const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
